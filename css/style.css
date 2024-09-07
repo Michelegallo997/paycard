@@ -1,0 +1,44 @@
+*, * > * {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  margin: 0; }
+
+body {
+  min-height: 100vh; }
+
+main .container {
+  display: flex;
+  align-items: center; }
+  main .container .left_seccion {
+    min-height: 100vh;
+    width: 20%;
+    background-image: url(/images/bg-main-desktop.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    main .container .left_seccion .card {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      left: 100%;
+      transform: translate(-50%, -50%); }
+      main .container .left_seccion .card .front_card {
+        position: relative;
+        transform: translateX(-100px); }
+      main .container .left_seccion .card .card_logo {
+        position: absolute;
+        top: 1rem;
+        left: 1rem; }
+      main .container .left_seccion .card #number {
+        position: absolute;
+        color: #fff;
+        bottom: 5rem;
+        left: 1rem;
+        letter-spacing: .125rem; }
+      main .container .left_seccion .card .card_info {
+        position: absolute; }
+  main .container .hidden {
+    display: none; }
