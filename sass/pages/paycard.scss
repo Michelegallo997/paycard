@@ -36,13 +36,49 @@ main{
                 }
                 .card_info{
                     position: absolute;
+                    bottom: 2rem;
+                    left: 1rem;
+                    right: 3rem; 
+                    display: flex;
+                    color: $white;
+                    justify-content: space-between;
                 }
-               
+                .back_card{
+                    position: relative;
+
                 
+                #cvc{
+                    position: absolute;
+                    top:7rem ;
+                    right: 3.5rem;
+                    color: $light-grayish_violet;
+                }
+                }
             }
         }
         .hidden{
             display: none;
         }
+        .error{
+            border: 2px solid $red;
+        }
+        .error_massage{
+            gap: 0;
+        }
+        .error_massage::after{
+            content: "can't be blank";
+            color: $red;
+            margin-top: .2rem;
+        }
+    .right_seccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .form{
+        display: grid;
+    }
+    }
     }
 }

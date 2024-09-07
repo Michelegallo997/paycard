@@ -39,6 +39,34 @@ main .container {
         left: 1rem;
         letter-spacing: .125rem; }
       main .container .left_seccion .card .card_info {
-        position: absolute; }
+        position: absolute;
+        bottom: 2rem;
+        left: 1rem;
+        right: 3rem;
+        display: flex;
+        color: #fff;
+        justify-content: space-between; }
+      main .container .left_seccion .card .back_card {
+        position: relative; }
+        main .container .left_seccion .card .back_card #cvc {
+          position: absolute;
+          top: 7rem;
+          right: 3.5rem;
+          color: #dedddf; }
   main .container .hidden {
     display: none; }
+  main .container .error {
+    border: 2px solid #cf3e1f; }
+  main .container .error_massage {
+    gap: 0; }
+  main .container .error_massage::after {
+    content: "can't be blank";
+    color: #cf3e1f;
+    margin-top: .2rem; }
+  main .container .right_seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    main .container .right_seccion .form {
+      display: grid; }
