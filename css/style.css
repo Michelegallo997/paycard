@@ -11,7 +11,7 @@ main .container {
   align-items: center; }
   main .container .left_seccion {
     min-height: 100vh;
-    width: 20%;
+    width: 40%;
     background-image: url(/images/bg-main-desktop.png);
     background-position: center center;
     background-size: cover;
@@ -54,7 +54,7 @@ main .container {
           right: 3.5rem;
           color: #dedddf; }
   main .container .hidden {
-    display: none; }
+    display: none !important; }
   main .container .error {
     border: 2px solid #cf3e1f; }
   main .container .error_massage {
@@ -133,3 +133,37 @@ main .container {
         border-radius: 6px;
         background-color: #21092f;
         cursor: pointer; }
+  main .container .thank {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; }
+    main .container .thank h1 {
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    main .container .thank p {
+      font-size: 18px;
+      color: #8e8593; }
+    main .container .thank button {
+      color: white;
+      width: 100%;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 18px;
+      background-color: #21092f;
+      cursor: pointer; }
+
+@media screen and (max-width: 1023px) {
+  .front_card img {
+    width: 300px; }
+  .front_card .card_container #number {
+    font-size: 1.1rem; }
+  .front_card .card_container .card_logo {
+    width: 50px; }
+  .front_card .card_container #cvc {
+    top: 42%;
+    right: 12%; }
+  .back_card img {
+    width: 300px; } }

@@ -1,0 +1,25 @@
+@media screen and (max-width:1023px) {
+    .front_card{
+        img{
+            width: 300px;
+        }
+        .card_container{
+            #number{
+                font-size: 1.1rem;
+            }
+            .card_logo{
+                width: 50px;
+            }
+            #cvc{
+                top: 42%;
+                right: 12%;
+            }
+        }
+    }
+    .back_card{
+        img{
+            width: 300px;
+        }
+    }
+    
+}
