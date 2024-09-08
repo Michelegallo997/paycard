@@ -162,8 +162,38 @@ main .container {
     font-size: 1.1rem; }
   .front_card .card_container .card_logo {
     width: 50px; }
-  .front_card .card_container #cvc {
-    top: 42%;
-    right: 12%; }
   .back_card img {
-    width: 300px; } }
+    width: 300px; }
+  .back_card #cvc {
+    top: 42%;
+    right: 12%; } }
+
+@media screen and (max-width: 767px) {
+  main .container {
+    flex-direction: column; }
+    main .container .left_seccion {
+      width: 100%;
+      min-height: 30vh;
+      background-image: url(/images/bg-main-mobile.png); }
+      main .container .left_seccion .card {
+        flex-direction: column-reverse;
+        left: 61%;
+        top: 60%;
+        gap: 0; }
+        main .container .left_seccion .card .front_card {
+          z-index: 100; }
+          main .container .left_seccion .card .front_card img {
+            width: 280px; }
+          main .container .left_seccion .card .front_card .card_container #number {
+            font-size: 1.1rem; }
+          main .container .left_seccion .card .front_card .card_container .card_logo {
+            width: 50px; }
+        main .container .left_seccion .card .back_card {
+          transform: translateY(70px); }
+          main .container .left_seccion .card .back_card img {
+            width: 280px; }
+          main .container .left_seccion .card .back_card #cvc {
+            top: 42%;
+            right: 12%; }
+    main .container .right_seccion {
+      margin-top: 6rem; } }

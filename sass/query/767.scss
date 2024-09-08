@@ -1,9 +1,49 @@
 @media screen and (max-width:767px) {
 
+main{    
 
-
-
-
-
+    .container{
+    flex-direction: column;
     
+    .left_seccion{
+        width: 100%;
+        min-height: 30vh;
+        background-image: url(/images/bg-main-mobile.png);  
+        
+    .card{
+        flex-direction: column-reverse;
+        left: 61%;
+        top: 60%;
+        gap: 0;
+        .front_card{
+            z-index: 100;
+            img{
+                width: 280px;
+            }
+            .card_container{
+                #number{
+                    font-size: 1.1rem;
+                }
+                .card_logo{
+                    width: 50px;
+                }
+            }
+        }
+        .back_card{
+            transform: translateY(70px);
+            img{
+                width: 280px;
+            }  
+            #cvc{
+                    top: 42%;
+                    right: 12%;
+                }
+        }
+    }  
+    }
+    .right_seccion{
+        margin-top:6rem;
+    }
+    }
+}
 }
