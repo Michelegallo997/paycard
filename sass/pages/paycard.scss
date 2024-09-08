@@ -76,9 +76,92 @@ main{
     justify-content: center;
     width: 100%;
 
-    .form{
+    form{
         display: grid;
+        gap: 1rem;
+        width: 350px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+
+        label{
+            color: $very-dark-grayish_violet;
+            margin-bottom: .3rem;
+            text-transform: uppercase;
+        }
+        input{
+            padding: .5rem;
+            font-size: 18px;
+            border: 1px solid $Dark-grayish_violet;
+            border-radius: 6px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input::placeholder{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: $Dark-grayish_violet;
+        }
+        input:focus{
+            outline-color: hsl(249,99%,64%);
+        }
+    
+    .grid_1{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 span;
     }
+    .grid_2{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 span;
+    }
+    .grid_3{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid_4{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 span;
+    }
+    .card_information{
+        display: flex;
+        grid-column: 2 span;
+        gap: 1rem;
+   
+    #card_date{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 span;
+
+        .two_inp{
+            display: flex;
+            div{
+                flex-direction: column;
+                input{
+                    width: 70px;
+                    margin-inline: .5rem;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    #card_cvc{
+        width: 90%;
+    }
+}
+button{
+    grid-column: 2 span;
+    font-size: 18px;
+    height: 50px;
+    color: $white;
+    border-radius: 6px;
+    background-color: $very-dark-grayish_violet;
+    cursor: pointer;
+}
+ }
     }
     }
 }
