@@ -55,14 +55,12 @@ main .container {
           color: #dedddf; }
   main .container .hidden {
     display: none !important; }
-  main .container .error {
-    border: 2px solid #cf3e1f; }
-  main .container .error_massage {
-    gap: 0; }
-  main .container .error_massage::after {
-    content: "can't be blank";
-    color: #cf3e1f;
-    margin-top: .2rem; }
+  main .container input.error {
+    border: 2px solid #ff5252; }
+  main .container .error_message {
+    color: #ff5252;
+    font-size: 15px;
+    margin-top: 0.3rem; }
   main .container .right_seccion {
     display: flex;
     align-items: center;

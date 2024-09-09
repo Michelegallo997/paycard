@@ -56,20 +56,20 @@ main{
                 }
             }
         }
-        .hidden{
+        .hidden {
             display: none !important;
         }
-        .error{
+
+        input.error {
             border: 2px solid $red;
         }
-        .error_massage{
-            gap: 0;
-        }
-        .error_massage::after{
-            content: "can't be blank";
+
+        .error_message {
             color: $red;
-            margin-top: .2rem;
+            font-size: 15px;
+            margin-top: 0.3rem;
         }
+
     .right_seccion{
     display: flex;
     align-items: center;

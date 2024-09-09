@@ -55,51 +55,51 @@ function handleSubmit(e) {
     // Validar nombre
     if (!nameInp.value) {
         nameInp.classList.add("error");
-        nameInp.parentElement.classList.add("error_message");
+        nameInp.nextElementSibling.innerText = "Name can't be blank";  // Mostrar mensaje
         isValid = false;
     } else {
         nameInp.classList.remove("error");
-        nameInp.parentElement.classList.remove("error_message");
+        nameInp.nextElementSibling.innerText = "";  // Limpiar mensaje
     }
 
     // Validar número de tarjeta
     if (!numberInp.value || numberInp.value.length < 16) {
         numberInp.classList.add("error");
-        numberInp.parentElement.classList.add("error_message");
+        numberInp.nextElementSibling.innerText = "Card number can't be blank or incomplete";  // Mostrar mensaje
         isValid = false;
     } else {
         numberInp.classList.remove("error");
-        numberInp.parentElement.classList.remove("error_message");
+        numberInp.nextElementSibling.innerText = "";  // Limpiar mensaje
     }
 
     // Validar mes de expiración
     if (!monthInp.value || monthInp.value.length < 2) {
         monthInp.classList.add("error");
-        monthInp.parentElement.classList.add("error_message");
+        monthInp.nextElementSibling.innerText = "Month can't be blank";  // Mostrar mensaje
         isValid = false;
     } else {
         monthInp.classList.remove("error");
-        monthInp.parentElement.classList.remove("error_message");
+        monthInp.nextElementSibling.innerText = "";  // Limpiar mensaje
     }
 
     // Validar año de expiración
     if (!yearInp.value || yearInp.value.length < 2) {
         yearInp.classList.add("error");
-        yearInp.parentElement.classList.add("error_message");
+        yearInp.nextElementSibling.innerText = "Year can't be blank";  // Mostrar mensaje
         isValid = false;
     } else {
         yearInp.classList.remove("error");
-        yearInp.parentElement.classList.remove("error_message");
+        yearInp.nextElementSibling.innerText = "";  // Limpiar mensaje
     }
 
     // Validar CVC
     if (!cvcInp.value || cvcInp.value.length < 3) {
         cvcInp.classList.add("error");
-        cvcInp.parentElement.classList.add("error_message");
+        cvcInp.nextElementSibling.innerText = "CVC can't be blank or incomplete";  // Mostrar mensaje
         isValid = false;
     } else {
         cvcInp.classList.remove("error");
-        cvcInp.parentElement.classList.remove("error_message");
+        cvcInp.nextElementSibling.innerText = "";  // Limpiar mensaje
     }
 
     // Si todos los campos son válidos, ocultar el formulario y mostrar el mensaje de agradecimiento
@@ -108,6 +108,7 @@ function handleSubmit(e) {
         completed.classList.remove("hidden");  // Mostrar la sección de "thank you"
     }
 }
+
 
 
 numberInp.addEventListener("keyup", setCardNumber);

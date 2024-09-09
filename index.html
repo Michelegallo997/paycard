@@ -35,10 +35,12 @@
                     <div class="grid_1">
                         <label for="card_name">Cardholder Name</label>
                         <input type="text" placeholder="e.g. Jane appleseed" id="card_name" required />
+                        <small class="error_message"></small> <!-- Mensaje de error -->
                     </div>
                     <div class="grid_2">
                         <label for="card_number">Card Number</label>
                         <input type="number" placeholder="e.g. 1234 5678 9191 0000" id="card_number" required oninput="limitInputLength(this, 16)" />
+                        <small class="error_message"></small> <!-- Mensaje de error -->
                     </div>
                     <div class="card_information">
                         <div id="card_date">
@@ -46,17 +48,21 @@
                             <div class="two_inp">
                                 <div>
                                     <input type="number" placeholder="MM" id="card_month" required oninput="limitInputLength(this, 2)" />
+                                    <small class="error_message"></small> <!-- Mensaje de error -->
                                 </div>
                                 <div>
                                     <input type="number" placeholder="YY" id="card_year" required oninput="limitInputLength(this, 2)" />
+                                    <small class="error_message"></small> <!-- Mensaje de error -->
                                 </div>
                             </div>
                         </div>
                         <div class="grid_4">
                             <label for="card_cvc">CVC</label>
                             <input type="number" placeholder="e.g. 123" id="card_cvc" required oninput="limitInputLength(this, 3)" />
+                            <small class="error_message"></small> <!-- Mensaje de error -->
                         </div>
                     </div>
+                    
                     <button id="submit_btn" type="submit">Confirm</button>
                 </form>
                 <div class="thank hidden">
