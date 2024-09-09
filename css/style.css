@@ -12,7 +12,7 @@ main .container {
   main .container .left_seccion {
     min-height: 100vh;
     width: 40%;
-    background-image: url(../images/bg-main-desktop.png);
+    background-image: url(../images/bg-main-desktop1.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ main .container {
     main .container .left_seccion {
       width: 100%;
       min-height: 30vh;
-      background-image: url(../images/bg-main-mobile.png); }
+      background-image: url(../images/bg-main-mobile1.png); }
       main .container .left_seccion .card {
         flex-direction: column-reverse;
         left: 61%;
